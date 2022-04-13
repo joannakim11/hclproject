@@ -3,6 +3,8 @@ package com.example.one.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +20,10 @@ import com.example.one.services.UserService;
 
 @RestController
 @RequestMapping("/users")
+
+
 public class UsersController {
+
 	
 	@Autowired
 	UserService userService;

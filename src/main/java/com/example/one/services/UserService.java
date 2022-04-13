@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.example.one.beans.User;
 import com.example.one.controllers.AddResponse;
 
+@Component
 public class UserService {
 	
 	static HashMap<Integer,User> userIdPass;
