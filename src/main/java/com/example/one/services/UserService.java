@@ -29,7 +29,7 @@ public class UserService {
 	
 	
 	@SuppressWarnings("unchecked")
-	public List getAllUsers() {
+	public static List getAllUsers() {
 		
 		List users = new ArrayList(userIdPass.values());
 		return users;
